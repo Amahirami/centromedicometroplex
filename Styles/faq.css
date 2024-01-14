@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#ffffff, #455dff)
+}
+
+img{
+max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;   
+}
+
+.menu{
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    }
+    
+.logo{
+        color:#242fff;
+        font-size: 25px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 28px;
+    color: #111455;
+    font-weight: 600;
+    display: block;
+    text-decoration: none; /* Agregado para quitar el subrayado */
+}
+
+.menu .navbar ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: none; /* Agregado para quitar el subrayado */
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+}
+
+
+/*Footer*/
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 0;
+    
+}
+
+.link ul{
+    display: flex;
+}
+
+.link ul li > a{
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.link ul li > a:hover{
+    color: #001bb1;
+    text-decoration: none;
+}
+
+/*Media queries, manejo responsivo*/
+
+@media (max-width: 991px) {
+    .menu{
+        padding: 28px;
+     }
+    
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        background-color: rgb(231, 231, 231);
+        display: none;
+    }
+    
+    .menu.navbar ul li a:hover{
+        color: #001bb1;
+    }
+    
+    .menu .navbar ul li{
+        width:100%;
+    }
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    
+    .logo{
+         width: 150%;
+    }
+        
+    .carousel-inner {
+        width: 100%; 
+    }
+
+    .carousel-item img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .link ul{
+        margin-top: 20px;
+    }
+}
+
+
