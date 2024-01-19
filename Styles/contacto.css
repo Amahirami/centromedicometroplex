@@ -14,7 +14,7 @@ body{
 }
 
 img{
-max-width: 100%;
+    max-width: 100%;
 }
 
 .container{
@@ -33,11 +33,11 @@ max-width: 100%;
     }
     
 .logo{
-        color:#242fff;
-        font-size: 25px;
-        font-weight: 800;
-        text-transform: uppercase;
-        text-decoration: none;
+    color:#242fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
     }
 
 .menu .navbar ul li{
@@ -51,12 +51,12 @@ max-width: 100%;
     color: #111455;
     font-weight: 600;
     display: block;
-    text-decoration: none; /* Agregado para quitar el subrayado */
+    text-decoration: none;
 }
 
 .menu .navbar ul li a:hover {
     color: #FFFFFF;
-    text-decoration: none; /* Agregado para quitar el subrayado */
+    text-decoration: none; 
 }
 
 
@@ -145,9 +145,6 @@ td,th{
     padding: 8px 15px;
 }
 
-
-
-/*Footer*/
 .footer{
     display:flex;
     justify-content: space-between;
@@ -173,7 +170,6 @@ td,th{
 }
 
 /*Media queries, manejo responsivo*/
-
 @media (max-width: 991px) {
     .menu{
         padding: 28px;
